@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  background: linear-gradient(135deg, #1B1464, #0652DD);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+.card {
+  background-color: #fff;
+  width: 400px;
+  margin: 100px auto;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+.card-header {
+  line-height: 36px;
+}
+.card-header img {
+  height: 36px;
+  vertical-align: middle;
+  margin: auto 0;
+}
+.card-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #ecf0f1;
+
+}
+.card-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 30px;
+}
+.card-input button {
+  border: none;
+  border-radius: 30px;
+  background-color: #0652DD;
+  padding: 15px 20px;
+  color: #fff;
+}
+.card-input button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.card-input button:active {
+  transform: scale(0.95);
+}
+ul li{
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  user-select: none;
+  position: relative;
+}
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+}
+ul li.checked::before {
+  background-image: url(./images/checked.png);
+}
+li.checked {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+ul li span {
+  float: right;
+  font-size: 25px;
+}
